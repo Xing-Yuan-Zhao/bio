@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Xingyuan Zhao’s Bio",
+    "section": "",
+    "text": "Contact Me:\nEmail: xingyuan.zhao@utdallas.edu\n\n\nBio:\nXingyuan Zhao is a Ph.D. student in Political Science at the University of Texas at Dallas.\nHis research focuses on leveraging Natural Language Processing (NLP) techniques to convert political text information into structured knowledge and derive meaningful insights.\nBy leveraging cutting-edge NLP algorithms and domain expertise in political science, Xingyuan aims to uncover hidden patterns and trends in political discourse that can inform policy-making and enhance our understanding of complex political phenomena. His ultimate goal is to bridge the gap between advanced NLP technologies and real-world political applications, contributing to more data-driven and evidence-based decision-making in the public sector."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Contact Me\nEmail: xingyuan.zhao@utdallas.edu"
+  },
+  {
+    "objectID": "index.html#contact-me",
+    "href": "index.html#contact-me",
+    "title": "Xingyuan Zhao’s Bio",
+    "section": "",
+    "text": "Email: xingyuan.zhao@utdallas.edu"
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Xingyuan Zhao’s Bio",
+    "section": "Bio:",
+    "text": "Bio:\nXingyuan Zhao is a Ph.D. Student"
+  }
+]
