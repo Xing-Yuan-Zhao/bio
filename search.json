@@ -82,5 +82,33 @@
     "title": "6354proposal",
     "section": "Database Interface",
     "text": "Database Interface\n\n\n\n\n\nflowchart TB\n  \n\n  user[user] &lt;--&gt; network((country network))\n\n  \n  subgraph frontend [frontend]\n  events(events) --&gt; network((country network))\n  end\n  \n  network((country network)) --&gt; database[(Database)]\n  \n  subgraph backend [backend]\n  database[(Database)] --&gt; response(data response)\n  end\n\n  \n  response(data response) --&gt; events(events)\n  response(data response) --&gt; network((country network))"
+  },
+  {
+    "objectID": "6354proposal_pre.html#datebase-purpose",
+    "href": "6354proposal_pre.html#datebase-purpose",
+    "title": "6354proposal",
+    "section": "Datebase Purpose",
+    "text": "Datebase Purpose\nThe motivation of this database is to create a database about internet censorship, cyber attacks and social network among the countries for future research usage.\nThis database enable researchers to answer the following questions: How does the censorship rules spread across countries that share stronger relations? Why some countries are considered greater threats even though they initiate less cyber attacks? How does recent AI technology adoption affect the type of censorship and cyber attacks?"
+  },
+  {
+    "objectID": "6354proposal_pre.html#schema",
+    "href": "6354proposal_pre.html#schema",
+    "title": "6354proposal",
+    "section": "Schema",
+    "text": "Schema\n\n\n\n\n\nerDiagram\n    COUNTRY ||--|{ POLICY: country_id\n    \n    COUNTRY ||--|{ REQUEST: country_id\n    \n    COUNTRY ||--|{ REQUEST_DETAIL: country_id\n    \n    COUNTRY ||--|{ CYBER_ATTACK: country_id\n    \n    COUNTRY ||--|{ EDGELIST: country_id\n    \n    COUNTRY {\n        string country_id PK\n        float covariates\n    }\n    \n    POLICY {\n        string url PK\n        string country_id FK\n        datetime issue_time\n        string title\n        string text\n        category document_type\n        category issuing_entity\n        category type_of_law\n        category type_of_liability\n    }\n    \n    REQUEST {\n        string country_id PK\n        datetime request_time PK\n        category reason PK\n        integer n_requests\n    }\n    \n    REQUEST_DETAIL {\n        string country_id PK\n        datetime request_time PK\n        category requestor PK\n        integer n_requests\n        integer n_items_requested\n        integer n_removed_legal\n        integer n_removed_policy\n        integer n_no_action_taken\n    }\n    \n    CYBER_ATTACK {\n        string source1 PK\n        string country_id FK\n        string victim FK\n        category type\n    }\n    \n    EDGELIST {\n        string country_id FK\n        string interaction PK\n        string interaction_strength\n    }"
+  },
+  {
+    "objectID": "6354proposal_pre.html#methods-and-explanation",
+    "href": "6354proposal_pre.html#methods-and-explanation",
+    "title": "6354proposal",
+    "section": "Methods and Explanation",
+    "text": "Methods and Explanation\nCOUNTRY\nThe country df contains all country level covariates. The unit is country and the country id is the primary key"
+  },
+  {
+    "objectID": "6354proposal_pre.html#database-interface",
+    "href": "6354proposal_pre.html#database-interface",
+    "title": "6354proposal",
+    "section": "Database Interface",
+    "text": "Database Interface\n\n\n\n\n\nflowchart TB\n  \n\n  user[user] &lt;--&gt; network((country network))\n\n  \n  subgraph frontend [frontend]\n  events(events) --&gt; network((country network))\n  end\n  \n  network((country network)) --&gt; database[(Database)]\n  \n  subgraph backend [backend]\n  database[(Database)] --&gt; response(data response)\n  end\n\n  \n  response(data response) --&gt; events(events)\n  response(data response) --&gt; network((country network))"
   }
 ]
